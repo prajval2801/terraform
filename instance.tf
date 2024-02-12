@@ -1,13 +1,12 @@
 provider "aws" {
-  region  = "sa-east-1"
+  region  = "ap-south-1"
 }
 
 resource "aws_instance" "instance-1" {
     ami                 = "ami-0623e7a7b489397c1"
-    availability_zone   = "sa-east-1a"
+    availability_zone   = "ap-south-1"
     instance_type       = "t2.micro"
-    key_name            = "new-sao-paulo"
-    security_groups     = [	"sg-00f9a66c9c40f8557"]
+    key_name            = "MUMBAI"
     tags   = {
         name = "demo"
     }
